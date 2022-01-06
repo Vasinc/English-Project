@@ -1,1 +1,1 @@
-alert("WEBSITE STILL IN WORK!!!")
+// alert("WEBSITE STILL IN WORK!!!")

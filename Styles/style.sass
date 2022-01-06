@@ -2,11 +2,13 @@
 
 *, *::before, *::after
     box-sizing: inherit
-    margin: 0
-    padding: 0
+    // margin: 0
+    // padding: 0
 
 body
     box-sizing: border-box
+    margin: 0
+    padding: 0
     font-family: 'Open Sans', sans-serif
     overflow-x: hidden
     font-size: 100%
@@ -46,8 +48,147 @@ main
         justify-content: space-evenly
         align-items: center
         .goat-text
-            width: 500px
+            width: 400px
             p:last-of-type
                 margin-top: 4rem
         .goat-image
-            // width: 400px
+            img
+                width: 500px
+                box-shadow: -16px 13px 23px 0px rgba(0,0,0,0.7)
+    .food-section
+        margin: 8rem 0
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        .food-text
+            width: 400px
+        .food-image
+            img
+                width: 500px
+                box-shadow: 15px 13px 23px 0px rgba(0,0,0,0.7)
+    
+footer
+    // .lights-section
+    //     background: url(../Images/christmas_lights.svg)
+    //     background-repeat: repeat
+    //     width: 300.92px
+    //     height: 80px
+    padding: 2rem 0
+    background: linear-gradient(white , #f6daabb2)
+    text-align: center
+    line-height: 2
+    font-size: 1.15rem
+    ul
+        list-style: none
+    a
+        text-decoration: none
+        color: rgb(10, 13, 37)
+        transition: color 250ms linear
+        &:hover
+            color: lighten(rgb(10, 13, 37), 30%)
+
+@media (max-width: 968px)
+    body
+        main
+            .goat-section
+                flex-direction: column
+                .goat-text
+                    margin-bottom: 4rem
+            .food-section
+                flex-direction: column-reverse
+                .food-text
+                    margin-bottom: 4rem
+
+
+@media (max-width: 885px)
+    body
+        header
+            h1
+                font-size: 3rem
+        main
+            .goat-section
+                .goat-text
+                    p:last-of-type
+                        margin-bottom: 4rem
+            .food-section
+                .food-text
+                    p:last-of-type
+                        margin-bottom: 4rem
+
+@media (max-width: 700px)
+    body
+        header
+            h1
+                font-size: 2rem
+        main
+            margin: 4rem 0
+            .carol-section
+                p
+                    margin: 4rem 0
+            .goat-section
+                margin: 4rem 0
+            .food-section
+                margin: 4rem 0
+            
+@media (max-width: 575px)
+    body
+        main
+            .goat-section
+                .goat-image
+                    img
+                        width: 375px
+            .food-section
+                .food-image
+                    img
+                        width: 375px
+
+@media (max-width: 500px)
+    body
+        header
+            h1
+                font-size: 1rem
+        main
+            .goat-section
+                .goat-text
+                    width: auto
+                    margin: 0 2rem
+            .food-section
+                .food-text
+                    width: auto
+                    margin: 0 2rem
+
+@media (max-width: 400px)
+    body
+        header
+            h1
+                font-size: 1rem
+
+@media (max-width: 375px)
+    body
+        main
+            .goat-section
+                .goat-image
+                    img
+                        width: 255px
+            .food-section
+                .food-image
+                    img
+                        width: 255px
+
+@media (max-width: 300px)
+    body
+        main
+            .goat-section
+                .goat-image
+                    img
+                        width: 205px
+            .food-section
+                .food-image
+                    img
+                        width: 205px
+
+@media (max-width: 300px)
+    body
+        header
+            h1
+                font-size: .75rem
