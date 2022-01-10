@@ -39,6 +39,16 @@ header h1 {
   text-transform: uppercase;
 }
 
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
 main {
   margin: 8rem 0;
 }
